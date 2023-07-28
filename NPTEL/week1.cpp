@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cmath>
+#include<cstring>
 #include<vector>
 using namespace std;
 int main()
@@ -12,12 +13,17 @@ int main()
     // cout<<pow(n,2)<<endl;
     // cout<<sqrt(n)<<endl;
 
-    vector<int> arr;
-    arr.resize(10);
-    for (int i = 0; i < 10; i++)
-    {
-        arr[i] = i+1;
-    }
+    // vector<int> arr;
+    // // int arr[3];
+    // arr.resize(10);
+    // for (int i = 0; i < 10; i++)
+    // { 
+    //     arr[i] = i+1;
+    // }
+
+
+
+    
     
 
     return 0;
