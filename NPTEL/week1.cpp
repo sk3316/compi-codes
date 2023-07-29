@@ -21,10 +21,14 @@ int main()
     //     arr[i] = i+1;
     // }
 
+    // string s = "programming in modern c++";
+    // cout<<s.size()<<endl;
+    // cout<<strlen(s)<<endl;
+    // cout<<s.length(s)<<endl;
+    // cout<<strlen(s.c_str())<<endl;
 
 
-    
-    
+    int data
 
     return 0;
 }
