@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cmath>
 #include<cstring>
+#include<string>
 #include<vector>
 #include<algorithm>
 using namespace std;
@@ -29,12 +30,21 @@ int main()
     // cout<<strlen(s.c_str())<<endl;
 
 
-    int data[] = {50,30,40,10,20};
-    sort(&data[2],&data[5]);
-    for (int i = 0; i < 5; i++)
-    {
-        cout<<data[i]<<" ";
-    }
+    // int data[] = {50,30,40,10,20};
+    // sort(&data[2],&data[5]);
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     cout<<data[i]<<" ";
+    // }
+
+
+    string str1 = "welcome ";
+    string str2 = "students";
+    // str1+=str2;
+    // strcat(str1, str2);
+    // str1.append(str2);
+    str1.insert(str2);
+    cout<<str1;
     
 
     return 0;
