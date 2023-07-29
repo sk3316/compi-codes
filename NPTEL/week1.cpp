@@ -2,17 +2,18 @@
 #include<cmath>
 #include<cstring>
 #include<string>
+#include<string.h>
 #include<vector>
 #include<stack>
 #include<algorithm>
 using namespace std;
 
-void modify (int *arr){
-    rotate(arr, arr+3,arr+5);
-    rotate(arr, arr+2,arr+4);
-}
-int main()
-{   
+// void modify (int *arr){
+//     rotate(arr, arr+3,arr+5);
+//     rotate(arr, arr+2,arr+4);
+// }
+// int main()
+// {   
     // q1.
     // int n = 4;
 
@@ -74,139 +75,34 @@ int main()
     // }
     
     
-    int iarr[5];
-    for (int i = 0; i < 5; i++)
-    {
-        *(iarr+i)= i*2;
+    // int iarr[5];
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     *(iarr+i)= i*2;
+    // }
+    // modify(iarr);
+    // for (int i = 0; i < 5; ++i)
+    // {
+    //     cout<<*(iarr+i)<<" ";
+    // }
+
+
+    // int iarr[] = {10,20,50,40,10,50};
+    // rotate(&iarr[0],&iarr[2], &iarr[6]);
+    // remove(&iarr[0], &iarr[6],10);
+    // for (int i = 0; i < 4; ++i)
+    // {
+    //     cout<<iarr[i]<<" ";
+    // }
+
+
+    bool compare(char c1, char c2){
+        return tolower(c1)>tolower(c2);
     }
-    modify(iarr);
-    for (int i = 0; i < 5; ++i)
-    {
-        cout<<*(iarr+i)<<" ";
-    }
+    int main(){
+        char arri[20] = "c++ program", arr2[20]= "c program";
+        cout<<lexicographical_compare(arri,arri+strlen(arri),arr2, arr2+5,compare);
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     return 0;
 }
